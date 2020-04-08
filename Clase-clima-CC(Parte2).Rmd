@@ -1,0 +1,173 @@
+---
+title: "Fundamentos de Producción Agropecuaria (SILE1501) "
+subtitle: "Clima y Cambio Climático"  
+author: 'Dr. Francisco Zambrano Bigiarini <br> Investigador en <a href="https://hemera.umayor.cl/">Hémera</a> <br>Académico en Escuela de Agronomía <br> <a href="http://github.com/frzambra"><i class="fa fa-github fa-fw"></i>&nbsp; frzambra</a><br> <a href="http://twitter.com/frzambra"> <i class="fa fa-twitter fa-fw"></i>&nbsp; @frzambra</a><br> <a href="mailto:francisco.zambrano@umayor.cl"><i class="fa fa-paper-plane fa-fw"></i>&nbsp; francisco.zambrano@umayor.cl</a><br>'
+date: 8 Abril 2020 &ensp; `r knitr::include_graphics("img/Logo-UMAYOR.png")`
+output:
+  xaringan::moon_reader:
+    #chakra: remark-latest.min.js
+    lib_dir: libs
+    css: ["xaringan-themer.css","font-awesome-animation.min.css"]  
+    nature:
+      countIncrementalSlides: false
+    includes:
+      in_header: header.html        
+---
+
+```{r setup, include=FALSE}
+library(leaflet)
+library(sf)
+emas <- st_read('data/spatial/emas/emas.shp')
+
+options(htmltools.dir.version = FALSE)
+library(xaringanthemer)
+mono_light(title_slide_background_color = 'grey',
+           background_image = 'img/logo_hemera.png',
+           background_size = '10%',
+           background_position = '95% 5%',
+           code_inline_color = 'red',
+           code_font_google =  google_font("Work Sans", "300", "300i"),
+           link_color = 'darkred' )
+```
+---
+class: center, middle, inverse
+
+# Clima y Cambio Climático
+
+---
+# Clima
+
+Tiempo vs clima
+
+Tiempo: corto plazo
+
+Clima: largo plazo. 
+
+Una forma de recordarlo: 
+
+>El tiempo te dice qué ponerte en un día determinado. El clima te indica qué guardarropa debes tener.
+
+---
+# Clasificación del clima
+
+¿Por qué clasificarlo?
+
+Nos ayuda a conocer las condiciones que una región experimenta durante el año. En vez de tener que describir todas las condiciones observadas en una región durante un mes o temporada del año, un esquema de clasificación puede comunicar las condiciones esperadas utilizando solo dos o tres términos.
+
+¿Cómo lo podemos clasificar?
+
+Existen varios esquemas de clasificación del clima.
+
+Basados en:
+
+**`Precipitación y temperatura`**
+
+Precipitación y evapotranspiración
+
+Características ambientales
+
+---
+# Clasificación de Köppen-Geiger
+
+.center[<img src="gif/koppen_geiger_beck.gif" width=100%>]
+
+---
+# Clima de Chile
+
+
+.center[<img src="img/clima-chile.png" width=100%>]
+
+---
+# Clima de Chile
+
+.center[<img src="img/Bwk_1.png" width=100%>]
+
+---
+# Clima de Chile
+
+.center[<img src="img/Csb_2.png" width=100%>]
+
+---
+# Clima de Chile
+
+.center[<img src="img/Cfb_2.png" width=100%>]
+
+---
+# Cambio Climático
+
+**Causas**
+
+.center[<img src="gif/causes_CC.gif" width=100%>]
+
+---
+# Cambio Climático
+
+**Evidencia**
+
+.center[<img src="img/203_co2-graph-061219.jpg" width=100%>]
+
+---
+# Cambio Climático
+
+**Evidencia**
+
+.center[<img src="img/solar_irr_temperature.jfif" width=90%>]
+
+---
+# Cambio Climático
+
+**Cambio en los patrones de Temperatura y precipitación**
+
+.center[<img src="gif/CC_temperature.gif" width=100%>]
+
+---
+class: center, middle, inverse
+
+# Impactos del Cambio Climático en la Agricultura
+
+---
+# Precipitación
+
+.center[<img src="gif/laguna-aculeo.gif" width=100%>]
+
+---
+# Precipitación
+
+.center[<img src="img/deficit_precipitacion.png" width=100%>]
+
+---
+# Caudales
+
+.center[<img src="img/caudales.png" width=100%>]
+
+---
+# Embalses
+
+.center[<img src="img/embalses.png" width=100%>]
+
+---
+
+# Sequia
+
+.center[<img src="img/megadrought_impact_chile.png" width=100%>]
+.center[<img src="img/igarss.png" width=100%>]
+
+---
+# Sequía
+
+.center[<img src="img/zcNDVI_Dec_Coq-LosRios.png" width=80%>]
+
+---
+# Sequía
+
+.center[<img src="img/long_pattern_zcNDVI_crops.png" width=100%>]
+
+---
+# Sequía
+
+.center[<img src="img/vivir_con_menos_agua.png" width=100%>]
+
+---
+background-image: url("gif/thatsall.gif")
+background-position: center
+background-size: contain
